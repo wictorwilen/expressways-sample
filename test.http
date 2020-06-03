@@ -1,0 +1,45 @@
+### /
+GET http://localhost:3000/
+
+### /test
+GET http://localhost:3000/test
+
+### /test
+GET http://localhost:3000/test/id
+
+### One
+GET http://localhost:3000/test/id/?query=hello
+
+### One
+GET http://localhost:3000/test2
+
+### One
+GET http://localhost:3000/test2/id?query=hello
+
+### /test
+POST http://localhost:3000/test
+
+### /test
+POST http://localhost:3000/test/id
+
+### One
+POST http://localhost:3000/test/id/?query=hello
+
+### One
+POST http://localhost:3000/test2
+
+### One
+POST http://localhost:3000/test2/id?query=hello
+Content-Type: application/json
+
+{
+    "data": "hello"
+}
+
+### Custom
+POST http://localhost:3000/custom/id?query=hello
+Content-Type: application/json
+
+{
+    "data": "hello"
+}
